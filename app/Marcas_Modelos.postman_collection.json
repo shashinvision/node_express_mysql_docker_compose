@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "65ee6da7-a01c-44af-8fc7-2a57063ebfc1",
+		"name": "Marcas_Modelos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7896082"
+	},
+	"item": [
+		{
+			"name": "getMarcas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/marcas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"marcas"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getMarcas",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/marcas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"marcas"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "82"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"52-9hOWVsN0HJX5YI1S0yWAcwOOeo4\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jun 2022 20:08:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name_marca\": \"ALFA ROMERO\"\n        },\n        {\n            \"id\": 2,\n            \"name_marca\": \"ASIA MOTORS\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "getModelos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/modelos?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"modelos"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "getModelos",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/modelos?id=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"modelos"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "122"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"7a-0aXcfEMn2JVWWYQI5cNjv1CSCLY\""
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 22 Jun 2022 19:57:13 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name_modelo\": \"145\",\n            \"name_marca\": \"ALFA ROMERO\"\n        },\n        {\n            \"id\": 2,\n            \"name_modelo\": \"146\",\n            \"name_marca\": \"ALFA ROMERO\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
