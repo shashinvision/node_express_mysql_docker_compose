@@ -31,4 +31,4 @@ services:
     tty: true
 
 volumes:
-  db:
+  db_api:
