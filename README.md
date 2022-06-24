@@ -12,7 +12,7 @@ docker-compose up -d
 docker-compose stop
 ```
 
-## para najar las imagenes y contenedores
+## para eliminarel volumen actual de contenedores
 ```
 docker-compose down
 ```
